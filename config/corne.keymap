@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -78,10 +79,10 @@
 
             display-name = "Function";
             bindings = <
-&kp F1  &kp F2  &kp F3     &kp F4     &kp F5     &kp F6     &kp F7     &kp F8     &kp F9  &kp F10  &kp F11    &kp F12
-&trans  &trans  &trans     &trans     &trans     &BT_NXT    &C_BRI_DN  &C_BRI_UP  &trans  &C_MUTE  &C_VOL_DN  &C_VOL_UP
-&trans  &trans  &BT_SEL 1  &BT_SEL 2  &BT_SEL 3  &BT_PRV    &trans     &trans     &trans  &trans   &trans     &trans
-                           &BT_SEL 0  &trans     &BT_CLR    &trans     &trans     &trans
+&kp F1  &kp F2  &kp F3        &kp F4        &kp F5        &kp F6            &kp F7                &kp F8                &kp F9  &kp F10     &kp F11       &kp F12
+&trans  &trans  &trans        &trans        &trans        &bt BT_NXT        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP
+&trans  &trans  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_PRV        &trans                &trans                &trans  &trans      &trans        &trans
+                              &bt BT_SEL 0  &trans        &bt BT_CLR_ALL    &trans                &trans                &trans
             >;
         };
 
