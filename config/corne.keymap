@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -63,10 +64,10 @@
 
             display-name = "Navigate";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans     &trans
+&trans  &trans  &mkp LCLK  &trans  &mkp RCLK  &trans    &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans    &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &trans  &trans
+                           &trans  &trans     &trans    &trans    &trans     &trans
             >;
         };
 
